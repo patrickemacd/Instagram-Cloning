@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS ig_clone;
+CREATE DATABASE ig_clone;
+USE ig_clone; 
+
+
 #creating user table for the database
 CREATE TABLE users (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -51,7 +56,7 @@ CREATE TABLE follows (
 
 #creating hastags tables for the data
 
-#just a list of the tags that people have use
+#just a list of the tags that people have used
 CREATE TABLE tags (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   tag_name VARCHAR(255) UNIQUE,
